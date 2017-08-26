@@ -39,4 +39,4 @@ class UniversalSpider(CrawlSpider):
                         loader.add_value(key, *extractor.get('args'), **{'re': extractor.get('re')})
                     if extractor.get('method') == 'attr':
                         loader.add_value(key, getattr(response, *extractor.get('args')))
-            return loader.load_item()
+            yield loader.load_item()
