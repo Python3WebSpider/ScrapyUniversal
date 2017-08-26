@@ -1,0 +1,2 @@
+# ScrapyUniversal
+Scrapy Universal Spider
